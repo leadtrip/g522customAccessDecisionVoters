@@ -21,7 +21,7 @@ class BootStrap {
         UserRole.create user1, adminRole
         UserRole.create user2, adminRole
 
-        new ControllerActionPermission(user: user1, controller: 'customAccess', actions: 'index' ).save()
+        new ControllerActionPermission(user: user1, controller: 'customAccess', actions: 'index,create' ).save()
     }
 
     def destroy = {

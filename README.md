@@ -7,4 +7,4 @@ The custom voter inspects this table for controllers/actions annotated with @Sec
 
 2 x users are bootstrapped, user1 and user2 with password = password
 
-user1 can access custom controller & user2 can't
+user1 can access custom controller actions index & create but not update & user2 can't access any actions

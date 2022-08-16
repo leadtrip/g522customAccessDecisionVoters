@@ -6,6 +6,14 @@ import grails.plugin.springsecurity.annotation.Secured
 class CustomAccessController {
 
     def index() {
-        render 'You have custom access'
+        render 'You have index access'
+    }
+
+    def create() {
+        render 'You have create access'
+    }
+
+    def update() {
+        render 'You have update access'
     }
 }
