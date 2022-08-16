@@ -1,4 +1,4 @@
-Grails app with spring security enabled with a customer voter
+Grails app with spring security enabled with a custom access decision voter
 
 A table has been added that maps a user to a controller and comma separated list of actions that that user
 is allowed to access.
