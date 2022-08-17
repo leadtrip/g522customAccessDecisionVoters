@@ -3,15 +3,19 @@ package wood.mike
 import grails.core.GrailsControllerClass
 import grails.web.api.WebAttributes
 import groovy.util.logging.Slf4j
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.security.access.AccessDecisionVoter
 import org.springframework.security.access.ConfigAttribute
 import org.springframework.security.core.Authentication
+import org.springframework.stereotype.Component
 
 @Slf4j
+@Component
 class CustomAccessVoter implements AccessDecisionVoter<Object>, WebAttributes{
 
     static final CUSTOM_ACCESS_ONLY = 'CUSTOM_ACCESS_ONLY'
 
+    @Autowired
     ControllerActionPermissionService controllerActionPermissionService
 
     @Override
